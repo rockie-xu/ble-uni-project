@@ -4,12 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+
     <title>Nadia WebApp</title>
     <script>
         // Add a global error event listener early on in the page load, to help ensure that browsers
@@ -22,36 +17,19 @@
             }
         });
     </script>
-    <link rel="icon" href="icon.png">
+    
 </head>
 <body>
     <header>
         <img class="pageIcon" src="icon.png">
         <h2>Web Application for CC2650 via Bluetooth Low Energy</h2>
     </header>
+    
     <div class="main">
         <div>
             <button class="connect" type="button">Connect</button>
             <button class="disconnect" type="button">Disconnect</button>
         </div>
-        
-        <!--
-        <div id="terminal">
-            <div>Подключение к устройству...</div>
-            <div class="out">Исходящее сообщение</div>
-            <div class="in">Входящее сообщение</div>
-        </div>
-       
-        <div>
-            <form id="send-form">
-                <input id="input" type="text">
-                <button type="submit">Send</button>
-            </form>
-        </div>
-                
-        <script src="main.js"></script>
-        <script src="companion.js" data-service-worker="sw.js"></script>
-    -->
 
     <script>
             if('serviceWorker' in navigator) {
