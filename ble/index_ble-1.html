@@ -168,11 +168,11 @@
             log('> Connected:        ' + device.gatt.connected);
 
             log('Requesting Bluetooth Device to Battery Service...');
-            const device = await navigator.bluetooth.requestDevice({
+            const deviceBat = await navigator.bluetooth.requestDevice({
                 filters: [{services: ['battery_service']}]});
 
             log('Connecting to GATT Server...');
-            const server = await device.gatt.connect();
+            const server = await deviceBat.gatt.connect();
 
             log('Getting Battery Service...');
             const service = await server.getPrimaryService('battery_service');
