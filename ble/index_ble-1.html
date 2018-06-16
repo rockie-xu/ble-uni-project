@@ -126,7 +126,7 @@
         }
     </script>
 
-    <script>async function ReadBatteryLevel() {
+    <script>async function onButtonClick() {
         try {
             log('Requesting Bluetooth Device...');
             const device = await navigator.bluetooth.requestDevice({
