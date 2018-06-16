@@ -125,6 +125,53 @@
         }
     </script>
 
+    <script>async function onButtonClick() {
+        try {
+            log('Requesting Bluetooth Device...');
+            const device = await navigator.bluetooth.requestDevice({
+                filters: [{services: ['battery_service']}]});
+
+            log('Connecting to GATT Server...');
+            const server = await device.gatt.connect();
+
+            log('Getting Battery Service...');
+            const service = await server.getPrimaryService('battery_service');
+
+            log('Getting Battery Level Characteristic...');
+            const characteristic = await service.getCharacteristic('battery_level');
+
+            log('Reading Battery Level...');
+            const value = await characteristic.readValue();
+
+            log('> Battery Level is ' + value.getUint8(0) + '%');
+        } catch(error) {
+            log('Argh! ' + error);
+        }
+    }
+    </script>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            if (isWebBluetoothEnabled()) {
+                ChromeSamples.clearLog();
+                onButtonClick();
+            }
+        });
+    </script>
+
+    <script>
+        log = ChromeSamples.log;
+
+        function isWebBluetoothEnabled() {
+            if (navigator.bluetooth) {
+                return true;
+            } else {
+                ChromeSamples.setStatus('Web Bluetooth API is not available.\n' +
+                    'Please make sure the "Experimental Web Platform features" flag is enabled.');
+                return false;
+            }
+        }
+    </script>
 </div>
 </body>
 </html>
