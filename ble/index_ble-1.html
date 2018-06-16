@@ -146,6 +146,8 @@
 
             log('> Battery Level is ' + value.getUint8(0) + '%');
 
+            log('Device name is: ' + device.name);
+
             // request general device information - Model Name
             log('getting Device Information Service');
             const serviceDevInfo = await server.getPrimaryService('device_information');
@@ -157,6 +159,7 @@
             const valueModel = await charModel.readValue();
 
             log('> Model Name is ' + valueModel.getUint8(0) + '%');
+
 
             log('Getting Device Information Characteristic - Manufacturer Name');
             const charManufacturer = await serviceDevInfo.getCharacteristic('manufacturer_name_string');
