@@ -77,7 +77,8 @@
         });
     </script-->
 
-    <button>Get Bluetooth Device's Battery Level</button>
+    <button id="readBatteryLevel" onclick="ReadBatteryLevel()">Get Bluetooth Device's Battery Level</button>
+    <button id="" onclick="">Get Bluetooth Device's Information</button>
 
     <script>
         var ChromeSamples = {
@@ -125,7 +126,7 @@
         }
     </script>
 
-    <script>async function onButtonClick() {
+    <script>async function ReadBatteryLevel() {
         try {
             log('Requesting Bluetooth Device...');
             const device = await navigator.bluetooth.requestDevice({
@@ -144,6 +145,27 @@
             const value = await characteristic.readValue();
 
             log('> Battery Level is ' + value.getUint8(0) + '%');
+
+            // request general device information - Model Name
+            log('getting Device Information Service');
+            const serviceDevInfo = await server.getPrimaryService('device_information');
+
+            log('Getting Device Information Characteristic - Model Name');
+            const charModel = await.serviceDevInfo.getCharacteristic('model_number_string');
+
+            log('Reading Model Name...');
+            const valueModel = await charModel.readValue();
+
+            log('> Model Name is ' + valueModel.getUint8(0) + '%');
+
+            log('Getting Device Information Characteristic - Manufacturer Name');
+            const charManufacturer = await.serviceDevInfo.getCharacteristic('manufacturer_name_string');
+
+            log('Reading Manufacturer Name...');
+            const valueManufacturer = await charModel.readValue();
+
+            log('> Manufacturer Name is ' + valueManufacturer.getUint8(0) + '%');
+
         } catch(error) {
             log('Argh! ' + error);
         }
