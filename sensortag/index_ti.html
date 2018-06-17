@@ -15,13 +15,16 @@
         <div class="app-layout">
 
             <h3>SensorTag</h3>
-            <br/>
+            <!--br/>
             <button onclick="connect()" class="connect-btn"> Connect </button>
             <br/>
             <br/>
-            <p id="deviceName1">device name ...</p>
+            <!--p id="deviceName1">device name ...</p-->
             <br/>
             <button onclick="getBattery()" class="#"> get Battery Level </button>
+            <br/>
+            <br/>
+            <button onclick="getTemperature()" class="#"> get Temperature </button>
             <br/>
             <!--p id="batteryLevel"> battery level ...</p-->
             <pre id='log'> logging... </pre>
@@ -36,8 +39,8 @@
                     <td id="battery">... battery ...</td>
                 </tr>
                 <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
+                    <td>Temperature</td>
+                    <td id="temperature">... temperature ...</td>
                 </tr>
 
             </table>

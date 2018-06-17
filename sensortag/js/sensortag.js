@@ -1,6 +1,7 @@
 'use strict';
 
 let battery = null;
+let temperature = null;
 
 function connect() {
     console.log('Requesting Bluetooth Device...');
@@ -68,7 +69,39 @@ function getBattery() {
             document.getElementById('battery').innerText = value.getUint8(0) + '%';
         })
         .catch(error => {
-            log('Argh! ' + error);
+            console.log('Argh! ' + error);
+        });
+}
+
+function getTemperature() {
+    navigator.bluetooth.requestDevice(
+        {filters: [{services: ['0xaa00']}]})
+        .then(device => {
+            document.getElementById('deviceName').innerText = device.name;
+            document.getElementById('log').innerHTML = 'Connecting to Device...';
+            //device.addEventListener('gattserverdisconnected', onDisconnected)
+            return device.gatt.connect();
+        })
+        .then(server => {
+            document.getElementById('log').innerText = 'Connecting to Temperature Server...';
+            return server.getPrimaryService('0xaa00');
+        })
+        .then(service => {
+            document.getElementById('log').innerText = 'Getting Temperature Characteristic';
+            return service.getCharacteristic('0xaa01');
+        })
+        .then(characteristic => {
+            document.getElementById('log').innerText = 'Reading Temperature Level...';
+            return characteristic.readValue();
+        })
+        .then(value => {
+            temperature = value.getUint8(0);
+            document.getElementById('log').innerText = 'Temperature Level: ' + temperature;
+            //battery = 'Battery Level is ' + battery + '%';
+            document.getElementById('temperature').innerText = value.getUint8(0) + '°C';
+        })
+        .catch(error => {
+            console.log('Argh! ' + error);
         });
 }
 
