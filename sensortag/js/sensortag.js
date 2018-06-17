@@ -75,7 +75,7 @@ function getBattery() {
 
 function getTemperature() {
     navigator.bluetooth.requestDevice(
-        {filters: [{services: [0xaa00]}]})
+        {filters: [{services: ['F000AA00-0451-4000-B000-000000000000']}]})
         .then(device => {
             document.getElementById('deviceName').innerText = device.name;
             document.getElementById('log').innerHTML = 'Connecting to Device...';
@@ -84,11 +84,11 @@ function getTemperature() {
         })
         .then(server => {
             document.getElementById('log').innerText = 'Connecting to Temperature Server...';
-            return server.getPrimaryService(0xaa00);
+            return server.getPrimaryService('F000AA00-0451-4000-B000-000000000000');
         })
         .then(service => {
             document.getElementById('log').innerText = 'Getting Temperature Characteristic';
-            return service.getCharacteristic(0xaa01);
+            return service.getCharacteristic('F000AA01-0451-4000-B000-000000000000');
         })
         .then(characteristic => {
             document.getElementById('log').innerText = 'Reading Temperature Level...';
