@@ -1,0 +1,20 @@
+body {
+    background: #fff;
+}
+
+.connect-btn {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.app-layout {
+
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    background: #fff;
+    max-width: 450px;
+}
