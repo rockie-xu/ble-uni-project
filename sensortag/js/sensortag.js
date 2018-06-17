@@ -4,6 +4,7 @@ let battery = null;
 
 function connect() {
     console.log('Requesting Bluetooth Device...');
+    document.getElementById('batteryLevel').innerHTML = "waiting for response ... ";
     navigator.bluetooth.requestDevice(
         {
             filters: [{services: ['battery_service']}]
@@ -27,7 +28,7 @@ function connect() {
             console.log('All ready!');
             battery = characteristic.readValue();
             //log('> Battery Level is ' + battery.getUint8(0) + '%');
-            document.getElementById('battery').innerHTML = ('> Battery Level is ' + battery.getUint8(0) + '%');
+            document.getElementById('batteryLevel').innerHTML = "> Battery Level is " + battery.getUint8(0) + "%";
             //onConnected();
         })
         .catch(error => {
