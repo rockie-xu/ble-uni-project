@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ad647b7-61cf-43c4-b22d-274e2f7ac18c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ble/index_ble-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ble/index_ble-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensortag/index_ti.html" beforeDir="false" afterPath="$PROJECT_DIR$/sensortag/index_ti.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sensortag/js/sensortag.js" beforeDir="false" afterPath="$PROJECT_DIR$/sensortag/js/sensortag.js" afterDir="false" />
     </list>
@@ -50,8 +51,8 @@
       <file leaf-file-name="bulb.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lightbulb/web/bulb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="445">
+              <caret line="125" selection-start-line="125" selection-end-line="128" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -59,8 +60,8 @@
       <file leaf-file-name="index_ti.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sensortag/index_ti.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="228">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
               </folding>
@@ -80,8 +81,8 @@
       <file leaf-file-name="sensortag.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sensortag/js/sensortag.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="36" />
+            <state relative-caret-position="103">
+              <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -89,13 +90,12 @@
       <file leaf-file-name="index_ble-1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ble/index_ble-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="143" column="12" lean-forward="true" selection-start-line="143" selection-start-column="12" selection-end-line="146" selection-end-column="65" />
+            <state relative-caret-position="1673">
+              <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="198" selection-end-column="13" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#1304#3028#0" />
-                <element signature="n#script#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#2;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -120,11 +120,11 @@
       <list>
         <option value="$PROJECT_DIR$/ble/styles.css" />
         <option value="$PROJECT_DIR$/sensortag_pages/index_sensortag_pages.html" />
-        <option value="$PROJECT_DIR$/ble/index_ble-1.html" />
         <option value="$PROJECT_DIR$/sensortag/css/sensortag.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/sensortag/js/sensortag.js" />
+        <option value="$PROJECT_DIR$/ble/index_ble-1.html" />
         <option value="$PROJECT_DIR$/sensortag/index_ti.html" />
+        <option value="$PROJECT_DIR$/sensortag/js/sensortag.js" />
       </list>
     </option>
   </component>
@@ -223,6 +223,9 @@
       <recent name="https://googlechrome.github.io/samples/web-bluetooth/battery-level-async-await.html" />
       <recent name="https://googlechrome.github.io/samples/web-bluetooth/device-info-async-await.html" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Uni\4 Semester\TMS\proWebApp\clear_project\rockie-xu.github.io\sensortag" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -247,25 +250,25 @@
       <option name="presentableId" value="Default" />
       <updated>1529126594965</updated>
       <workItem from="1529126596200" duration="5888000" />
-      <workItem from="1529236859443" duration="3440000" />
+      <workItem from="1529236859443" duration="5047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9328000" />
+    <option name="totallyTimeSpent" value="10935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13500679" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13500679" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006784" side_tool="true" weight="0.16166884" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49932158" visible="true" weight="0.16166884" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932158" visible="true" weight="0.112125166" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -292,7 +295,6 @@
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="e#1304#3028#0" />
-            <element signature="n#script#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#2;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
@@ -367,24 +369,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="31" column="87" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ble/index_ble-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="143" column="12" lean-forward="true" selection-start-line="143" selection-start-column="12" selection-end-line="146" selection-end-column="65" />
+        <state relative-caret-position="1673">
+          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="198" selection-end-column="13" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="e#1304#3028#0" />
-            <element signature="n#script#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#2;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sensortag/sw.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/lightbulb/web/bulb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="445">
+          <caret line="125" selection-start-line="125" selection-end-line="128" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -397,22 +408,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sensortag/js/sensortag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="31" column="87" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
+        <state relative-caret-position="103">
+          <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sensortag/index_ti.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="228">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
           </folding>
