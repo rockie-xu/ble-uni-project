@@ -45,24 +45,27 @@ function getBattery() {
     navigator.bluetooth.requestDevice(
         {filters: [{services: ['battery_service']}]})
         .then(device => {
-            log('Connecting to GATT Server...');
+            document.getElementById('deviceName').innerText = device.name;
+            document.getElementById('log').innerHTML = 'Connecting to Device...';
+            //device.addEventListener('gattserverdisconnected', onDisconnected)
             return device.gatt.connect();
         })
         .then(server => {
-            log('Getting Battery Service...');
+            document.getElementById('log').innerText = 'Connecting to Battery Server...';
             return server.getPrimaryService('battery_service');
         })
         .then(service => {
-            log('Getting Battery Level Characteristic...');
+            document.getElementById('log').innerText = 'Getting Battery Characteristic';
             return service.getCharacteristic('battery_level');
         })
         .then(characteristic => {
-            log('Reading Battery Level...');
+            document.getElementById('log').innerText = 'Reading Battery Level...';
             return characteristic.readValue();
         })
         .then(value => {
             let batteryLevel = value.getUint8(0);
-            log('> Battery Level is ' + batteryLevel + '%');
+            batteryLevel = 'Battery Level is ' + batteryLevel + '%';
+            document.getElementById('batteryLevel').innerText = " Battery Level: " + battery.getUint8(0) + '%';
         })
         .catch(error => {
             log('Argh! ' + error);
