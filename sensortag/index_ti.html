@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
         <link rel="stylesheet" href="css/sensortag.css" />
-        <link rel="manifest" href="manifest.json" />
 
         <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     </head>
@@ -17,43 +16,57 @@
 
             <h3>SensorTag</h3>
             <br/>
-            <button onclick="connect()" class="connect-btn"> Connect </button>
+            <button onclick="getBattery()" class="connect-btn"> Connect </button>
             <br/>
             <br/>
-            <p id="deviceName">device name ...</p>
+            <!-- id="deviceName">device name ...</-->
             <br/>
             <button onclick="getBattery()" class=""> get Battery Level </button>
             <br/>
-            <p id="batteryLevel"> battery level ...</p>
+            <!--p id="batteryLevel"> battery level ...</p-->
             <pre id='log'> logging... </pre>
-            <script>
-                var ChromeSamples = {
-                    log: function() {
-                        var line = Array.prototype.slice.call(arguments).map(function(argument) {
-                            return typeof argument === 'string' ? argument : JSON.stringify(argument);
-                        }).join(' ');
 
-                        document.querySelector('#log').textContent += line + '\n';
-                    },
+            <table style="width:100%">
+                <tr>
+                    <td>Device Name</td>
+                    <td id="deviceName">... device name ...</td>
+                </tr>
+                <tr>
+                    <td>Battery Level</td>
+                    <td id="batteryLevel">... battery ...</td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                </tr>
 
-                    clearLog: function() {
-                        document.querySelector('#log').textContent = '';
-                    },
+            </table>
 
-                    setStatus: function(status) {
-                        document.querySelector('#status').textContent = status;
-                    },
-
-                    setContent: function(newContent) {
-                        var content = document.querySelector('#content');
-                        while(content.hasChildNodes()) {
-                            content.removeChild(content.lastChild);
-                        }
-                        content.appendChild(newContent);
-                    }
-                };
-            </script>
         </div>
+<!--
+        <script>
+            document.querySelector('button').addEventListener('click', function() {
+                if (isWebBluetoothEnabled()) {
+                    ChromeSamples.clearLog();
+                    onButtonClick();
+                }
+            });
+        </script>
+
+        <script>
+            log = ChromeSamples.log;
+
+            function isWebBluetoothEnabled() {
+                if (navigator.bluetooth) {
+                    return true;
+                } else {
+                    ChromeSamples.setStatus('Web Bluetooth API is not available.\n' +
+                        'Please make sure the "Experimental Web Platform features" flag is enabled.');
+                    return false;
+                }
+            }
+        </script>
+-->
         <script type="text/javascript" src="js/sensortag.js"></script>
     </body>
 </html>

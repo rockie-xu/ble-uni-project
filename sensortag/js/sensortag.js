@@ -1,7 +1,7 @@
 'use strict';
 
 let battery = null;
-
+/*
 function connect() {
     console.log('Requesting Bluetooth Device...');
     document.getElementById('log').innerHTML = 'Requesting Bluetooth Device...';
@@ -39,7 +39,7 @@ function connect() {
             console.log('Argh! ' + error);
         });
 }
-
+*/
 function getBattery() {
     log('Requesting Bluetooth Device...');
     navigator.bluetooth.requestDevice(
