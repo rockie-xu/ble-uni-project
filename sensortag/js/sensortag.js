@@ -27,7 +27,7 @@ function connect() {
             console.log('All ready!');
             battery = characteristic.readValue();
             //log('> Battery Level is ' + battery.getUint8(0) + '%');
-            document.getElementById('battery').innerText = ('> Battery Level is ' + battery.getUint8(0) + '%');
+            document.getElementById('battery').innerHTML = ('> Battery Level is ' + battery.getUint8(0) + '%');
             //onConnected();
         })
         .catch(error => {
