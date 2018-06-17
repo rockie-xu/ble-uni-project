@@ -62,9 +62,10 @@ function getBattery() {
             return characteristic.readValue();
         })
         .then(value => {
-            let batteryLevel = value.getUint8(0);
-            batteryLevel = 'Battery Level is ' + batteryLevel + '%';
-            document.getElementById('batteryLevel').innerText = " Battery Level: " + batteryLevel.getUint8(0) + '%';
+            battery = value.getUint8(0);
+            document.getElementById('log').innerText = 'Battery Level: ' + battery;
+            //battery = 'Battery Level is ' + battery + '%';
+            document.getElementById('battery').innerText = value.getUint8(0) + '%';
         })
         .catch(error => {
             log('Argh! ' + error);
