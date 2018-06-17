@@ -18,21 +18,21 @@ function connect() {
         })
         .then(server => {
             console.log('Getting Battery Service');
-            document.getElementById('log').innerHTML = 'Connecting to Battery Server...';
+            document.getElementById('log').innerText = 'Connecting to Battery Server...';
             return server.getPrimaryService('battery_service');
         })
         .then(service => {
             console.log('Getting Battery Characteristic');
-            document.getElementById('log').innerHTML = 'Getting Battery Characteristic';
+            document.getElementById('log').innerText = 'Getting Battery Characteristic';
             return service.getCharacteristic('battery_level');
         })
         .then(characteristic => {
-            document.getElementById('log').innerHTML = 'Reading Battery Level...';
+            document.getElementById('log').innerText = 'Reading Battery Level...';
             console.log('All ready!');
             battery = characteristic.readValue();
             document.getElementById('log').innerHTML = battery;
             console.log('Battery Level is ' + battery.getUint8(0));
-            document.getElementById('batteryLevel').innerHTML = " Battery Level: " + battery.getUint8(0);
+            document.getElementById('batteryLevel').innerText = " Battery Level: " + battery.getUint8(0);
             //onConnected();
         })
         .catch(error => {
