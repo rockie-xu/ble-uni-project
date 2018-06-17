@@ -21,8 +21,38 @@
             <br/>
             <br/>
             <p id="deviceName">device name ...</p>
+            <br/>
+            <button onclick="getBattery()" class=""> get Battery Level </button>
+            <br/>
             <p id="batteryLevel"> battery level ...</p>
-            <pre id="log"> logging... </pre>
+            <pre id='log'> logging... </pre>
+            <script>
+                var ChromeSamples = {
+                    log: function() {
+                        var line = Array.prototype.slice.call(arguments).map(function(argument) {
+                            return typeof argument === 'string' ? argument : JSON.stringify(argument);
+                        }).join(' ');
+
+                        document.querySelector('#log').textContent += line + '\n';
+                    },
+
+                    clearLog: function() {
+                        document.querySelector('#log').textContent = '';
+                    },
+
+                    setStatus: function(status) {
+                        document.querySelector('#status').textContent = status;
+                    },
+
+                    setContent: function(newContent) {
+                        var content = document.querySelector('#content');
+                        while(content.hasChildNodes()) {
+                            content.removeChild(content.lastChild);
+                        }
+                        content.appendChild(newContent);
+                    }
+                };
+            </script>
         </div>
         <script type="text/javascript" src="js/sensortag.js"></script>
     </body>
