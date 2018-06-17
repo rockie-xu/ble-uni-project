@@ -41,7 +41,6 @@ function connect() {
 }
 */
 function getBattery() {
-    log('Requesting Bluetooth Device...');
     navigator.bluetooth.requestDevice(
         {filters: [{services: ['battery_service']}]})
         .then(device => {
@@ -65,7 +64,7 @@ function getBattery() {
         .then(value => {
             let batteryLevel = value.getUint8(0);
             batteryLevel = 'Battery Level is ' + batteryLevel + '%';
-            document.getElementById('batteryLevel').innerText = " Battery Level: " + battery.getUint8(0) + '%';
+            document.getElementById('batteryLevel').innerText = " Battery Level: " + batteryLevel.getUint8(0) + '%';
         })
         .catch(error => {
             log('Argh! ' + error);
