@@ -77,7 +77,7 @@
         });
     </script-->
 
-    <button>Get Bluetooth Device's Battery Level</button>
+    <button>Get Bluetooth Device's Temperature Level</button>
     <!--button id="" onclick="">Get Bluetooth Device's Information</button-->
 
     <script>
@@ -127,51 +127,50 @@
     </script>
 
     <script>async function onButtonClick() {
-        try {
-            log('Requesting Bluetooth Device...');
-            const device = await navigator.bluetooth.requestDevice({
-                filters: [{services: ['battery_service']}]});
-
-            log('Connecting to GATT Server...');
-            const server = await device.gatt.connect();
-
-            log('Getting Battery Service...');
-            const service = await server.getPrimaryService('f000aa00-0451-4000-b000-000000000000');
-
-            log('Getting Battery Level Characteristic...');
-            const characteristic = await service.getCharacteristic('f000aa01-0451-4000-b000-000000000000');
-
-            log('Reading Battery Level...');
-            const value = await characteristic.readValue();
-
-            log('> Battery Level is ' + value.getUint8(0) + '%');
-
-            log('Device name is: ' + device.name);
-
-            // request general device information - Model Name
-            log('getting Device Information Service');
-            const serviceDevInfo = await server.getPrimaryService('device_information');
-
-            log('Getting Device Information Characteristic - Model Name');
-            const charModel = await serviceDevInfo.getCharacteristic('model_number_string');
-
-            log('Reading Model Name...');
-            const valueModel = await charModel.readValue();
-
-            log('> Model Name is ' + valueModel.getUint8(0) + '%');
-
-
-            log('Getting Device Information Characteristic - Manufacturer Name');
-            const charManufacturer = await serviceDevInfo.getCharacteristic('manufacturer_name_string');
-
-            log('Reading Manufacturer Name...');
-            const valueManufacturer = await charModel.readValue();
-
-            log('> Manufacturer Name is ' + valueManufacturer.getUint8(0) + '%');
-
-        } catch(error) {
-            log('Argh! ' + error);
+<!--        let serviceUuid = document.querySelector('#service').value;
+        if (serviceUuid.startsWith('0x')) {
+            serviceUuid = parseInt(serviceUuid);
         }
+
+        let characteristicUuid = document.querySelector('#characteristic').value;
+        if (characteristicUuid.startsWith('0x')) {
+            characteristicUuid = parseInt(characteristicUuid);
+        }
+-->
+        let serviceUuid = 'f000aa00-0451-4000-b000-000000000000';
+        let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
+        log('Requesting Bluetooth Device...');
+        navigator.bluetooth.requestDevice({filters: [{services: [serviceUuid]}]})
+            .then(device => {
+                log('Connecting to GATT Server...');
+                return device.gatt.connect();
+            })
+            .then(server => {
+                log('Getting Service...');
+                return server.getPrimaryService(serviceUuid);
+            })
+            .then(service => {
+                log('Getting Characteristic...');
+                return service.getCharacteristic(characteristicUuid);
+            })
+            .then(characteristic => {
+                log('> Characteristic UUID:  ' + characteristic.uuid);
+                log('> Broadcast:            ' + characteristic.properties.broadcast);
+                log('> Read:                 ' + characteristic.properties.read);
+                log('> Write w/o response:   ' +
+                    characteristic.properties.writeWithoutResponse);
+                log('> Write:                ' + characteristic.properties.write);
+                log('> Notify:               ' + characteristic.properties.notify);
+                log('> Indicate:             ' + characteristic.properties.indicate);
+                log('> Signed Write:         ' +
+                    characteristic.properties.authenticatedSignedWrites);
+                log('> Queued Write:         ' + characteristic.properties.reliableWrite);
+                log('> Writable Auxiliaries: ' +
+                    characteristic.properties.writableAuxiliaries);
+            })
+            .catch(error => {
+                log('Argh! ' + error);
+            });
     }
     </script>
 
