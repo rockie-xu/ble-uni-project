@@ -84,11 +84,11 @@ function getTemperature() {
         })
         .then(server => {
             document.getElementById('log').innerText = 'Connecting to Temperature Server...';
-            return server.getPrimaryService('F000AA00-0451-4000-B000-000000000000');
+            return server.getPrimaryService('f000aa00-0451-4000-b000-000000000000');
         })
         .then(service => {
             document.getElementById('log').innerText = 'Getting Temperature Characteristic';
-            return service.getCharacteristic('F000AA01-0451-4000-B000-000000000000');
+            return service.getCharacteristic('f000aa01-0451-4000-b000-000000000000');
         })
         .then(characteristic => {
             document.getElementById('log').innerText = 'Reading Temperature Level...';
