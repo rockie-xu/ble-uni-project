@@ -138,7 +138,7 @@
         }
 -->
         let serviceUuid = 'f000aa00-0451-4000-b000-000000000000';
-        let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
+        characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
         log('Requesting Bluetooth Device...');
         navigator.bluetooth.requestDevice({filters: [{services: [serviceUuid]}]})
             .then(device => {
