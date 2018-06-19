@@ -127,18 +127,8 @@
     </script>
 
     <script>async function onButtonClick() {
-<!--        let serviceUuid = document.querySelector('#service').value;
-        if (serviceUuid.startsWith('0x')) {
-            serviceUuid = parseInt(serviceUuid);
-        }
-
-        let characteristicUuid = document.querySelector('#characteristic').value;
-        if (characteristicUuid.startsWith('0x')) {
-            characteristicUuid = parseInt(characteristicUuid);
-        }
--->
         let serviceUuid = 'f000aa00-0451-4000-b000-000000000000';
-        characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
+        let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
         log('Requesting Bluetooth Device...');
         navigator.bluetooth.requestDevice({filters: [{services: [serviceUuid]}]})
             .then(device => {
