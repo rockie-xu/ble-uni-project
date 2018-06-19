@@ -75,7 +75,7 @@ function getBattery() {
 
 function getTemperature() {
     navigator.bluetooth.requestDevice(
-        {filters: [{services: ['F000AA00-0451-4000-B000-000000000000']}]})
+        {filters: [{services: ['battery_service']}]})
         .then(device => {
             document.getElementById('deviceName').innerText = device.name;
             document.getElementById('log').innerHTML = 'Connecting to Device...';
