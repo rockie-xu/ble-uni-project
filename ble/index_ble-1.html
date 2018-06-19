@@ -136,10 +136,10 @@
             const server = await device.gatt.connect();
 
             log('Getting Battery Service...');
-            const service = await server.getPrimaryService('battery_service');
+            const service = await server.getPrimaryService('f000aa00-0451-4000-b000-000000000000');
 
             log('Getting Battery Level Characteristic...');
-            const characteristic = await service.getCharacteristic('battery_level');
+            const characteristic = await service.getCharacteristic('f000aa01-0451-4000-b000-000000000000');
 
             log('Reading Battery Level...');
             const value = await characteristic.readValue();

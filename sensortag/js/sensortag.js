@@ -85,6 +85,7 @@ function getTemperature() {
         .then(server => {
             document.getElementById('log').innerText = 'Connecting to Temperature Server...';
             return server.getPrimaryService('f000aa00-0451-4000-b000-000000000000');
+
         })
         .then(service => {
             document.getElementById('log').innerText = 'Getting Temperature Characteristic';
@@ -98,7 +99,7 @@ function getTemperature() {
             temperature = value.getUint8(0);
             document.getElementById('log').innerText = 'Temperature Level: ' + temperature;
             //battery = 'Battery Level is ' + battery + '%';
-            document.getElementById('temperature').innerText = value.getUint8(0) + '°C';
+            document.getElementById('temperature').innerText = value.toString() + '°C';
         })
         .catch(error => {
             console.log('Argh! ' + error);
