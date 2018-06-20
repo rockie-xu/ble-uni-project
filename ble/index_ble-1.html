@@ -158,11 +158,11 @@
             })
             .then(server => {
                 log('Getting Service...');
-                return server.getPrimaryService(serviceUuid);
+                return server.getPrimaryService('f000aa00-0451-4000-b000-000000000000');
             })
             .then(service => {
                 log('Getting Characteristic...');
-                return service.getCharacteristic(characteristicUuid);
+                return service.getCharacteristic('f000aa01-0451-4000-b000-000000000000');
             })
             .then(characteristic => {
                 log('> Characteristic UUID:  ' + characteristic.uuid);
