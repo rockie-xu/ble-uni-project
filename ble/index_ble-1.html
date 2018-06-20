@@ -155,6 +155,7 @@
             .then(characteristic => {
                 log('> Characteristic UUID:  ' + characteristic.uuid);
                 log('> Characteristic value:  ' + String(characteristic.value));
+                log('> Characteristic value other way:  ' + String(characteristic.readValue()));
                 log('> Broadcast:            ' + characteristic.properties.broadcast);
                 log('> Read:                 ' + characteristic.properties.read);
                 log('> Write w/o response:   ' +
