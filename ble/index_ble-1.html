@@ -156,6 +156,7 @@
                 log('> Characteristic UUID:  ' + characteristic.uuid);
                 log('> Characteristic value:  ' + String(characteristic.value));
                 log('> Characteristic value other way:  ' + String(characteristic.readValue()));
+                log('> Characteristic value next way:  ' + String(characteristic.readValue().getUint8(0)));
                 log('> Broadcast:            ' + characteristic.properties.broadcast);
                 log('> Read:                 ' + characteristic.properties.read);
                 log('> Write w/o response:   ' +
