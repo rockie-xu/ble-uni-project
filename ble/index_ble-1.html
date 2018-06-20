@@ -137,12 +137,13 @@
             characteristicUuid = parseInt(characteristicUuid);
         }
 */
-        let serviceUuid = f000aa00-0451-4000-b000-000000000000;
-        serviceUuid = parseInt(serviceUuid);
+        let serviceUuid = 'f000aa00-0451-4000-b000-000000000000';
+        serviceUuid1 = parseInt(serviceUuid);
         let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
         characteristicUuid = parseInt(characteristicUuid);
         log('Requesting Bluetooth Device...');
-        log('connecting to service: ' + serviceUuid);
+        log('connecting to service: ' + serviceUuid1);
+        log('connecting to service: ' + Number(serviceUuid));
         let options = {};
         options.acceptAllDevices = true
         navigator.bluetooth.requestDevice(options)
