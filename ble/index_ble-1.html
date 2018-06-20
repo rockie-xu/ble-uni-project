@@ -137,13 +137,16 @@
             characteristicUuid = parseInt(characteristicUuid);
         }
 */
-        let serviceUuid = 'f000aa00-0451-4000-b000-000000000000';
+        let serviceUuid = f000aa00-0451-4000-b000-000000000000;
         serviceUuid = parseInt(serviceUuid);
         let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
         characteristicUuid = parseInt(characteristicUuid);
         log('Requesting Bluetooth Device...');
         log('connecting to service: ' + serviceUuid);
-        navigator.bluetooth.requestDevice({filters: [{services: ['battery_service']}]})
+        navigator.bluetooth.requestDevice(
+            {
+            filters: [{services: ['battery_service'] }]
+            })
             .then(device => {
                 log('Connecting to GATT Server...');
                 return device.gatt.connect();
