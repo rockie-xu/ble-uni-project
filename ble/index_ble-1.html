@@ -132,13 +132,11 @@
         let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
         characteristicUuid = parseInt(characteristicUuid);
         log('Requesting Bluetooth Device...');
-        log('connecting to service: ' + serviceUuid1.toString());
-        log('connecting to service: ' + Number(serviceUuid).toString());
         let options = {};
         options.acceptAllDevices = true;
         navigator.bluetooth.requestDevice(
             {
-                filters: [{ services: ['battery_service'] }],
+                acceptAllDevices: true,
                 optionalServices: ['f000aa00-0451-4000-b000-000000000000']
             }
         )
@@ -156,7 +154,7 @@
             })
             .then(characteristic => {
                 log('> Characteristic UUID:  ' + characteristic.uuid);
-                log('> Characteristic value:  ' + characteristic.readValue());
+                log('> Characteristic value:  ' + characteristic.value.getUint8(0));
                 log('> Broadcast:            ' + characteristic.properties.broadcast);
                 log('> Read:                 ' + characteristic.properties.read);
                 log('> Write w/o response:   ' +
