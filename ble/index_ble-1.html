@@ -127,16 +127,6 @@
     </script>
 
     <script>async function onButtonClick() {
-/*        let serviceUuid = document.querySelector('#service').value;
-        if (serviceUuid.startsWith('0x')) {
-            serviceUuid = parseInt(serviceUuid);
-        }
-
-        let characteristicUuid = document.querySelector('#characteristic').value;
-        if (characteristicUuid.startsWith('0x')) {
-            characteristicUuid = parseInt(characteristicUuid);
-        }
-*/
         let serviceUuid = 'f000aa00-0451-4000-b000-000000000000';
         serviceUuid1 = parseInt(serviceUuid);
         let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
@@ -166,6 +156,7 @@
             })
             .then(characteristic => {
                 log('> Characteristic UUID:  ' + characteristic.uuid);
+                log('> Characteristic value:  ' + characteristic.readValue());
                 log('> Broadcast:            ' + characteristic.properties.broadcast);
                 log('> Read:                 ' + characteristic.properties.read);
                 log('> Write w/o response:   ' +
