@@ -150,7 +150,7 @@
             })
             .then(service => {
                 log('Getting Characteristic...');
-                return service.getCharacteristic('2902');
+                return service.getCharacteristic('0x2902');
             })
             .then(characteristic => {
                 log('> Characteristic UUID:  ' + characteristic.uuid);
