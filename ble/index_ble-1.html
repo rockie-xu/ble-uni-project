@@ -150,13 +150,13 @@
             })
             .then(service => {
                 log('Getting Characteristic...');
-                return service.getCharacteristic('f000aa01-0451-4000-b000-000000000000');
+                return service.getCharacteristic('2902');
             })
             .then(characteristic => {
                 log('> Characteristic UUID:  ' + characteristic.uuid);
                 log('> Characteristic value:  ' + String(characteristic.value));
                 log('> Characteristic value other way:  ' + String(characteristic.readValue()));
-                log('> Characteristic value next way:  ' + String(characteristic.readValue().getUint8(0)));
+                log('> Characteristic value next way:  ' + String(characteristic.readValue()));
                 log('> Broadcast:            ' + characteristic.properties.broadcast);
                 log('> Read:                 ' + characteristic.properties.read);
                 log('> Write w/o response:   ' +
