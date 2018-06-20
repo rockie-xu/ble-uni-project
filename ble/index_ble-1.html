@@ -143,10 +143,9 @@
         characteristicUuid = parseInt(characteristicUuid);
         log('Requesting Bluetooth Device...');
         log('connecting to service: ' + serviceUuid);
-        navigator.bluetooth.requestDevice(
-            {
-            filters: [{services: ['battery_service'] }]
-            })
+        let options = {};
+        options.acceptAllDevices = true
+        navigator.bluetooth.requestDevice(options)
             .then(device => {
                 log('Connecting to GATT Server...');
                 return device.gatt.connect();
