@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles.css" rel="stylesheet">
-    <title>Nadia WebApp</title>
+    <title>Blue WebApp</title>
     <script>
         // Add a global error event listener early on in the page load, to help ensure that browsers
         // which don't support specific functionality still end up displaying a meaningful message.
@@ -21,63 +21,12 @@
 <body>
 <header>
     <img class="pageIcon" src="icon.png">
-    <h2>Web Application for CC2650 via Bluetooth Low Energy</h2>
+    <h2>Web Application via Bluetooth Low Energy</h2>
 </header>
 
 <div class="main">
-    <!--div>
-        <button class="connect" type="button">Connect</button>
-        <button class="disconnect" type="button">Disconnect</button>
-    </div-->
 
-    <script>
-            if('serviceWorker' in navigator) {
-              navigator.serviceWorker.register('sw.js');
-            }
-    </script>
-
-    <!--script>
-        window.addEventListener('DOMContentLoaded', function() {
-          const searchParams = new URL(location).searchParams;
-          const inputs = Array.from(document.querySelectorAll('input[id]'));
-
-          inputs.forEach(input => {
-            if (searchParams.has(input.id)) {
-              if (input.type == 'checkbox') {
-                input.checked = searchParams.get(input.id);
-              } else {
-                input.value = searchParams.get(input.id);
-                input.blur();
-              }
-            }
-            if (input.type == 'checkbox') {
-              input.addEventListener('change', function(event) {
-                const newSearchParams = new URL(location).searchParams;
-                if (event.target.checked) {
-                  newSearchParams.set(input.id, event.target.checked);
-                } else {
-                  newSearchParams.delete(input.id);
-                }
-                history.replaceState({}, '', Array.from(newSearchParams).length ?
-                    location.pathname + '?' + newSearchParams : location.pathname);
-              });
-            } else {
-              input.addEventListener('input', function(event) {
-                const newSearchParams = new URL(location).searchParams;
-                if (event.target.value) {
-                  newSearchParams.set(input.id, event.target.value);
-                } else {
-                  newSearchParams.delete(input.id);
-                }
-                history.replaceState({}, '', Array.from(newSearchParams).length ?
-                    location.pathname + '?' + newSearchParams : location.pathname);
-              });
-            }
-          });
-        });
-    </script-->
-
-    <button>Get Bluetooth Device's Temperature Level</button>
+    <button>Get Bluetooth Device's Information</button>
     <!--button id="" onclick="">Get Bluetooth Device's Information</button-->
 
     <script>
@@ -115,18 +64,8 @@
         <pre id="log"> </pre>
     </div>
 
-
     <script>
-        if (/Chrome\/(\d+\.\d+.\d+.\d+)/.test(navigator.userAgent)){
-            // Let's log a warning if the sample is not supposed to execute on this
-            // version of Chrome.
-            if (55 > parseInt(RegExp.$1)) {
-                ChromeSamples.setStatus('Warning! Keep in mind this sample has been tested with Chrome ' + 55 + '.');
-            }
-        }
-    </script>
-
-    <script>async function onButtonClick() {
+        async function onButtonClick() {
         let serviceUuid = 'f000aa00-0451-4000-b000-000000000000';
         serviceUuid1 = parseInt(serviceUuid);
         let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
@@ -174,6 +113,52 @@
                 log('Argh! ' + error);
             });
     }
+
+    function getBattery() {
+        navigator.bluetooth.requestDevice(
+            {
+                acceptAllDevices: true
+            })
+            .then(device => {
+                log('Connecting to GATT Server...');
+                return device.gatt.connect();
+            })
+            .then(server => {
+                log('Connecting to Battery Server...');
+                return server.getPrimaryService('battery_service');
+            })
+            .then(service => {
+                log('Getting Battery Characteristic');
+                return service.getCharacteristic('battery_level');
+            })
+            .then(characteristic => {
+                log('Reading Battery Level...');
+                return characteristic.readValue();
+            })
+            .then(value => {
+                log('> Device name:  ' + device.name);
+                log('> Battery Level: ' + value.getUint8(0) + '%')
+                log('> Characteristic UUID:  ' + characteristic.uuid);
+                log('> Characteristic value:  ' + String(characteristic.value));
+                log('> Characteristic value other way:  ' + String(characteristic.readValue()));
+                log('> Characteristic value next way:  ' + String(characteristic.readValue()));
+                log('> Broadcast:            ' + characteristic.properties.broadcast);
+                log('> Read:                 ' + characteristic.properties.read);
+                log('> Write w/o response:   ' +
+                    characteristic.properties.writeWithoutResponse);
+                log('> Write:                ' + characteristic.properties.write);
+                log('> Notify:               ' + characteristic.properties.notify);
+                log('> Indicate:             ' + characteristic.properties.indicate);
+                log('> Signed Write:         ' +
+                    characteristic.properties.authenticatedSignedWrites);
+                log('> Queued Write:         ' + characteristic.properties.reliableWrite);
+                log('> Writable Auxiliaries: ' +
+                    characteristic.properties.writableAuxiliaries);
+            })
+            .catch(error => {
+                console.log('Argh! ' + error);
+            });
+    }
     </script>
 
     <script>
@@ -198,6 +183,8 @@
             }
         }
     </script>
+
+    <script type="text/javascript" src="info/info.js"></script>
 </div>
 </body>
 </html>
