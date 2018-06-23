@@ -29,6 +29,22 @@
     <button>Get Bluetooth Device's Information</button>
     <!--button id="" onclick="">Get Bluetooth Device's Information</button-->
 
+    <table style="width:100%">
+        <tr>
+            <td>Device Name</td>
+            <td id="deviceName">... device name ...</td>
+        </tr>
+        <tr>
+            <td>Battery Level</td>
+            <td id="battery">... battery ...</td>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td id="temperature">... temperature ...</td>
+        </tr>
+
+    </table>
+
     <script>
         var ChromeSamples = {
             log: function() {
@@ -119,6 +135,7 @@
                     optionalServices: ['battery_service']
                 })
                 .then(device => {
+                    document.getElementById('deviceName').innerText = device.name;
                     log('Connecting to GATT Server...');
                     return device.gatt.connect();
                 })
@@ -136,12 +153,10 @@
                 })
                 .then(value => {
                     let batteryLevel = value.getUint8(0);
-                    log('> Device name:  ' + device.name);
+                    document.getElementById('battery').innerText = value.getUint8(0) + '%';
                     log('> Battery Level: ' + batteryLevel + '%')
-                    log('> Characteristic UUID:  ' + characteristic.uuid);
+                    /*log('> Characteristic UUID:  ' + characteristic.uuid);
                     log('> Characteristic value:  ' + String(characteristic.value));
-                    log('> Characteristic value other way:  ' + String(characteristic.readValue()));
-                    log('> Characteristic value next way:  ' + String(characteristic.readValue()));
                     log('> Broadcast:            ' + characteristic.properties.broadcast);
                     log('> Read:                 ' + characteristic.properties.read);
                     log('> Write w/o response:   ' +
@@ -153,7 +168,7 @@
                         characteristic.properties.authenticatedSignedWrites);
                     log('> Queued Write:         ' + characteristic.properties.reliableWrite);
                     log('> Writable Auxiliaries: ' +
-                        characteristic.properties.writableAuxiliaries);
+                        characteristic.properties.writableAuxiliaries); */
                 })
                 .catch(error => {
                     console.log('Argh! ' + error);

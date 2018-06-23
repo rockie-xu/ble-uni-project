@@ -107,5 +107,8 @@ h3 {
     padding: 0.5em;
 }
 
-
-
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
