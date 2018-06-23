@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <title>Nadia WebApp</title>
+    <script>
+        // Add a global error event listener early on in the page load, to help ensure that browsers
+        // which don't support specific functionality still end up displaying a meaningful message.
+        window.addEventListener('error', function (error) {
+            if (ChromeSamples && ChromeSamples.setStatus) {
+                console.error(error);
+                ChromeSamples.setStatus(error.message + ' (Your browser may not support this feature.)');
+                error.preventDefault();
+            }
+        });
+    </script>
+</head>
+<body>
+<header>
+    <img class="pageIcon" src="icon.png">
+    <h2>Web Application for CC2650 via Bluetooth Low Energy</h2>
+</header>
+
+<div class="main">
+    <!--div>
+        <button class="connect" type="button">Connect</button>
+        <button class="disconnect" type="button">Disconnect</button>
+    </div-->
+
+    <script>
+            if('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('sw.js');
+            }
+    </script>
+
+    <!--script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const searchParams = new URL(location).searchParams;
+          const inputs = Array.from(document.querySelectorAll('input[id]'));
+
+          inputs.forEach(input => {
+            if (searchParams.has(input.id)) {
+              if (input.type == 'checkbox') {
+                input.checked = searchParams.get(input.id);
+              } else {
+                input.value = searchParams.get(input.id);
+                input.blur();
+              }
+            }
+            if (input.type == 'checkbox') {
+              input.addEventListener('change', function(event) {
+                const newSearchParams = new URL(location).searchParams;
+                if (event.target.checked) {
+                  newSearchParams.set(input.id, event.target.checked);
+                } else {
+                  newSearchParams.delete(input.id);
+                }
+                history.replaceState({}, '', Array.from(newSearchParams).length ?
+                    location.pathname + '?' + newSearchParams : location.pathname);
+              });
+            } else {
+              input.addEventListener('input', function(event) {
+                const newSearchParams = new URL(location).searchParams;
+                if (event.target.value) {
+                  newSearchParams.set(input.id, event.target.value);
+                } else {
+                  newSearchParams.delete(input.id);
+                }
+                history.replaceState({}, '', Array.from(newSearchParams).length ?
+                    location.pathname + '?' + newSearchParams : location.pathname);
+              });
+            }
+          });
+        });
+    </script-->
+
+    <button>Get Bluetooth Device's Temperature Level</button>
+    <!--button id="" onclick="">Get Bluetooth Device's Information</button-->
+
+    <script>
+        var ChromeSamples = {
+            log: function() {
+                var line = Array.prototype.slice.call(arguments).map(function(argument) {
+                    return typeof argument === 'string' ? argument : JSON.stringify(argument);
+                }).join(' ');
+
+                document.querySelector('#log').textContent += line + '\n';
+            },
+
+            clearLog: function() {
+                document.querySelector('#log').textContent = '';
+            },
+
+            setStatus: function(status) {
+                document.querySelector('#status').textContent = status;
+            },
+
+            setContent: function(newContent) {
+                var content = document.querySelector('#content');
+                while(content.hasChildNodes()) {
+                    content.removeChild(content.lastChild);
+                }
+                content.appendChild(newContent);
+            }
+        };
+    </script>
+
+    <h3>Live Output</h3>
+    <div id="output" class="output">
+        <div id="content"></div>
+        <div id="status"></div>
+        <pre id="log"> </pre>
+    </div>
+
+
+    <script>
+        if (/Chrome\/(\d+\.\d+.\d+.\d+)/.test(navigator.userAgent)){
+            // Let's log a warning if the sample is not supposed to execute on this
+            // version of Chrome.
+            if (55 > parseInt(RegExp.$1)) {
+                ChromeSamples.setStatus('Warning! Keep in mind this sample has been tested with Chrome ' + 55 + '.');
+            }
+        }
+    </script>
+
+    <script>async function onButtonClick() {
+        let serviceUuid = 'f000aa00-0451-4000-b000-000000000000';
+        serviceUuid1 = parseInt(serviceUuid);
+        let characteristicUuid = 'f000aa01-0451-4000-b000-000000000000';
+        characteristicUuid = parseInt(characteristicUuid);
+        log('Requesting Bluetooth Device...');
+        let options = {};
+        options.acceptAllDevices = true;
+        navigator.bluetooth.requestDevice(
+            {
+                acceptAllDevices: true,
+                optionalServices: ['f000aa00-0451-4000-b000-000000000000']
+            }
+        )
+            .then(device => {
+                log('Connecting to GATT Server...');
+                return device.gatt.connect();
+            })
+            .then(server => {
+                log('Getting Service...');
+                return server.getPrimaryService('f000aa00-0451-4000-b000-000000000000');
+            })
+            .then(service => {
+                log('Getting Characteristic...');
+                return service.getCharacteristic('0x2902');
+            })
+            .then(characteristic => {
+                log('> Characteristic UUID:  ' + characteristic.uuid);
+                log('> Characteristic value:  ' + String(characteristic.value));
+                log('> Characteristic value other way:  ' + String(characteristic.readValue()));
+                log('> Characteristic value next way:  ' + String(characteristic.readValue()));
+                log('> Broadcast:            ' + characteristic.properties.broadcast);
+                log('> Read:                 ' + characteristic.properties.read);
+                log('> Write w/o response:   ' +
+                    characteristic.properties.writeWithoutResponse);
+                log('> Write:                ' + characteristic.properties.write);
+                log('> Notify:               ' + characteristic.properties.notify);
+                log('> Indicate:             ' + characteristic.properties.indicate);
+                log('> Signed Write:         ' +
+                    characteristic.properties.authenticatedSignedWrites);
+                log('> Queued Write:         ' + characteristic.properties.reliableWrite);
+                log('> Writable Auxiliaries: ' +
+                    characteristic.properties.writableAuxiliaries);
+            })
+            .catch(error => {
+                log('Argh! ' + error);
+            });
+    }
+    </script>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            if (isWebBluetoothEnabled()) {
+                ChromeSamples.clearLog();
+                onButtonClick();
+            }
+        });
+    </script>
+
+    <script>
+        log = ChromeSamples.log;
+
+        function isWebBluetoothEnabled() {
+            if (navigator.bluetooth) {
+                return true;
+            } else {
+                ChromeSamples.setStatus('Web Bluetooth API is not available.\n' +
+                    'Please make sure the "Experimental Web Platform features" flag is enabled.');
+                return false;
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
