@@ -2,14 +2,14 @@ var config = {
   "swFile": "sw.js",
   "staticFileGlobs": [
     "manifest.json",
-    "web/**/*.css",
+    "styles.css",
     "bulb/*.css",
+    "index.html",
+    "*./png",
     "bulb/**/*.{ttf,woff,woff2,eof}",
     "bulb/*.js",
     "bulb/*.html",
-    "*.html",
-    "*./png",
-    "bulb*.{png,jpg,gif,svg,mp3}"
+    "bulb/*.{png,jpg,gif,svg,mp3}"
   ],
   "runtimeCaching": [
     {
@@ -19,7 +19,7 @@ var config = {
   ],
   "handleFetch": true,
   "stripPrefix": "bulb/",
-  "cacheId": "web-lightbulb",
+  "cacheId": "blue-webapp",
   "maximumFileSizeToCacheInBytes": 4194304,
   "ignoreUrlParametersMatching": [/./],
   "verbose": true
