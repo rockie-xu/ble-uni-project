@@ -1,12 +1,15 @@
 var config = {
-  "swFile": "serviceworker.js",
+  "swFile": "sw.js",
   "staticFileGlobs": [
-    "web/manifest.json",
+    "manifest.json",
     "web/**/*.css",
-    "web/**/*.{ttf,woff,woff2,eof}",
-    "web/**/*.js",
-    "web/**/*.html",
-    "web/**/*.{png,jpg,gif,svg,mp3}"
+    "bulb/*.css",
+    "bulb/**/*.{ttf,woff,woff2,eof}",
+    "bulb/*.js",
+    "bulb/*.html",
+    "*.html",
+    "*./png",
+    "bulb*.{png,jpg,gif,svg,mp3}"
   ],
   "runtimeCaching": [
     {
@@ -15,7 +18,7 @@ var config = {
     }
   ],
   "handleFetch": true,
-  "stripPrefix": "web/",
+  "stripPrefix": "bulb/",
   "cacheId": "web-lightbulb",
   "maximumFileSizeToCacheInBytes": 4194304,
   "ignoreUrlParametersMatching": [/./],
