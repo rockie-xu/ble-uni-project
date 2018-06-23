@@ -135,8 +135,9 @@
                     return characteristic.readValue();
                 })
                 .then(value => {
+                    let batteryLevel = value.getUint8(0);
                     log('> Device name:  ' + device.name);
-                    log('> Battery Level: ' + value.getUint8(0) + '%')
+                    log('> Battery Level: ' + batteryLevel + '%')
                     log('> Characteristic UUID:  ' + characteristic.uuid);
                     log('> Characteristic value:  ' + String(characteristic.value));
                     log('> Characteristic value other way:  ' + String(characteristic.readValue()));
