@@ -175,51 +175,6 @@
                 });
     }
 
-        function getBattery() {
-        navigator.bluetooth.requestDevice(
-            {
-                acceptAllDevices: true
-            })
-            .then(device => {
-                log('Connecting to GATT Server...');
-                return device.gatt.connect();
-            })
-            .then(server => {
-                log('Connecting to Battery Server...');
-                return server.getPrimaryService('battery_service');
-            })
-            .then(service => {
-                log('Getting Battery Characteristic');
-                return service.getCharacteristic('battery_level');
-            })
-            .then(characteristic => {
-                log('Reading Battery Level...');
-                return characteristic.readValue();
-            })
-            .then(value => {
-                log('> Device name:  ' + device.name);
-                log('> Battery Level: ' + value.getUint8(0) + '%')
-                log('> Characteristic UUID:  ' + characteristic.uuid);
-                log('> Characteristic value:  ' + String(characteristic.value));
-                log('> Characteristic value other way:  ' + String(characteristic.readValue()));
-                log('> Characteristic value next way:  ' + String(characteristic.readValue()));
-                log('> Broadcast:            ' + characteristic.properties.broadcast);
-                log('> Read:                 ' + characteristic.properties.read);
-                log('> Write w/o response:   ' +
-                    characteristic.properties.writeWithoutResponse);
-                log('> Write:                ' + characteristic.properties.write);
-                log('> Notify:               ' + characteristic.properties.notify);
-                log('> Indicate:             ' + characteristic.properties.indicate);
-                log('> Signed Write:         ' +
-                    characteristic.properties.authenticatedSignedWrites);
-                log('> Queued Write:         ' + characteristic.properties.reliableWrite);
-                log('> Writable Auxiliaries: ' +
-                    characteristic.properties.writableAuxiliaries);
-            })
-            .catch(error => {
-                console.log('Argh! ' + error);
-            });
-    }
     </script>
 
     <script>
@@ -245,7 +200,7 @@
         }
     </script>
 
-    <script type="text/javascript" src="info/info.js"></script>
+    <!--script type="text/javascript" src="info/info.js"></script-->
 </div>
 </body>
 </html>

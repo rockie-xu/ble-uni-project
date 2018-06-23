@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ad647b7-61cf-43c4-b22d-274e2f7ac18c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ble/bulb/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ble/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ble/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ble/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ble/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ble/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/sensortag/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/sensortag/css/sensortag.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/sensortag/index_ti.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/sensortag/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/sensortag/js/sensortag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/sensortag/js/st.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/sensortag/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/sw-toolbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/ble/sw-toolbox.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ble/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+            <state relative-caret-position="475">
+              <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
               <folding>
                 <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
               </folding>
@@ -29,86 +38,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="info.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sw.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ble/sw.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ble/info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="533">
+              <caret line="202" column="67" selection-start-line="202" selection-start-column="67" selection-end-line="202" selection-end-column="67" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#2295#7053#0" />
-                <element signature="e#4715#7161#0" />
+                <element signature="n#script#2;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#3;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="info.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ble/info/info.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ble/bulb/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            <state relative-caret-position="152">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bulb.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ble/bulb/web/bulb.html">
+      <file leaf-file-name="generate-service-worker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ble/bulb/generate-service-worker.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ble/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
-              <folding>
-                <element signature="e#121#286#0" />
-                <element signature="e#298#555#0" />
-                <element signature="e#569#595#0" />
-                <element signature="e#604#821#0" />
-                <element signature="e#1061#1091#0" />
-                <element signature="e#1096#1120#0" />
-                <element signature="e#1125#1176#0" />
-                <element signature="e#1268#1295#0" />
-                <element signature="e#1305#1425#0" />
-                <element signature="e#1489#1539#0" />
-                <element signature="e#1583#1605#0" />
-                <element signature="e#1618#1760#0" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ble/web/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="sensortag.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ble/sensortag/js/sensortag.js">
+      <file leaf-file-name="serviceworker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ble/serviceworker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="77" column="47" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="47" />
+            <state relative-caret-position="-741">
               <folding>
-                <element signature="n#!!block;n#connect#0" />
-                <element signature="e#1896#2186#0" />
-                <element signature="e#2404#2567#0" />
-                <element signature="e#2601#2742#0" />
-                <element signature="e#2767#3048#0" />
-                <element signature="e#3074#3128#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_ti.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ble/sensortag/index_ti.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="45" selection-end-column="20" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,9 +97,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -152,9 +130,12 @@
         <option value="$PROJECT_DIR$/start_style.css" />
         <option value="$PROJECT_DIR$/ble/info/info.js" />
         <option value="$PROJECT_DIR$/ble/info/info.html" />
-        <option value="$PROJECT_DIR$/ble/index.html" />
         <option value="$PROJECT_DIR$/ble/styles.css" />
         <option value="$PROJECT_DIR$/ble/info.html" />
+        <option value="$PROJECT_DIR$/ble/pwa/manifest.json" />
+        <option value="$PROJECT_DIR$/ble/sw-toolbox.js" />
+        <option value="$PROJECT_DIR$/ble/companion.js" />
+        <option value="$PROJECT_DIR$/ble/index.html" />
       </list>
     </option>
   </component>
@@ -199,27 +180,7 @@
               <item name="rockie-xu.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="rockie-xu.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="ble" type="462c0819:PsiDirectoryNode" />
-              <item name="info" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rockie-xu.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rockie-xu.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ble" type="462c0819:PsiDirectoryNode" />
-              <item name="sensortag" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rockie-xu.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rockie-xu.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ble" type="462c0819:PsiDirectoryNode" />
-              <item name="sensortag" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rockie-xu.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rockie-xu.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ble" type="462c0819:PsiDirectoryNode" />
-              <item name="sensortag" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,6 +199,7 @@
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -248,6 +210,7 @@
       <recent name="https://googlechrome.github.io/samples/web-bluetooth/device-info-async-await.html" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Uni\4 Semester\TMS\proWebApp\clear_project\rockie-xu.github.io\ble\pwa" />
       <recent name="D:\Uni\4 Semester\TMS\proWebApp\clear_project\rockie-xu.github.io\ble" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -279,12 +242,12 @@
       <workItem from="1529126596200" duration="5888000" />
       <workItem from="1529236859443" duration="19227000" />
       <workItem from="1529433474841" duration="11340000" />
-      <workItem from="1529770675146" duration="10877000" />
+      <workItem from="1529770675146" duration="14157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47332000" />
+    <option name="totallyTimeSpent" value="50612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
@@ -321,53 +284,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sensortag_pages/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3268">
-          <caret line="172" column="49" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lightbulb/web/bulb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ble/sensortag/index_ti.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ble/sensortag/js/sensortag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="77" column="47" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!block;n#connect#0" />
-            <element signature="e#1896#2186#0" />
-            <element signature="e#2404#2567#0" />
-            <element signature="e#2601#2742#0" />
-            <element signature="e#2767#3048#0" />
-            <element signature="e#3074#3128#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ble/sensortag/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1653">
@@ -595,9 +511,6 @@
     <entry file="file://$PROJECT_DIR$/ble/bulb/web/bulb.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ble/bulb/web/bulb.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ble/info/info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-608">
@@ -609,35 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ble/index.html">
+    <entry file="file://$PROJECT_DIR$/ble/sensortag/css/sensortag.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-          <folding>
-            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ble/sensortag/js/sensortag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="77" column="47" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!block;n#connect#0" />
-            <element signature="e#1896#2186#0" />
-            <element signature="e#2404#2567#0" />
-            <element signature="e#2601#2742#0" />
-            <element signature="e#2767#3048#0" />
-            <element signature="e#3074#3128#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ble/info/info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -652,10 +540,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ble/sensortag/css/sensortag.css">
+    <entry file="file://$PROJECT_DIR$/ble/bulb/web/bulb.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/info/info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="437">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -680,21 +571,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ble/sensortag/js/sensortag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="83" />
+          <folding>
+            <element signature="n#!!block;n#connect#0" />
+            <element signature="e#1896#2186#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ble/info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state relative-caret-position="533">
+          <caret line="202" column="67" selection-start-line="202" selection-start-column="67" selection-end-line="202" selection-end-column="67" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="e#2295#7053#0" />
-            <element signature="e#4715#7161#0" />
+            <element signature="n#script#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#3;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/bulb/sw-precache-config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/sensortag/sw.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/pwa/lemon-icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/pwa/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/companion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/sw-toolbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2717">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/serviceworker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-741">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
+          <folding>
+            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/sw.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/manifest.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/bulb/web/manifest.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/bulb/web/serviceworker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/bulb/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/bulb/generate-service-worker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/web/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
