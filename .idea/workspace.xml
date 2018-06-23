@@ -3,42 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ad647b7-61cf-43c4-b22d-274e2f7ac18c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ble/index_ble-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ble/index_ble.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ble/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ble/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/generate-service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/sw-precache-config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/web/bulb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/web/images/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/web/index_bulb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/web/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/web/serviceworker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/web/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightbulb/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/ble/sensortag/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag/css/sensortag.css" beforeDir="false" afterPath="$PROJECT_DIR$/ble/sensortag/css/sensortag.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag/index_ti.html" beforeDir="false" afterPath="$PROJECT_DIR$/ble/sensortag/index_ti.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ble/sensortag/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag/js/sensortag.js" beforeDir="false" afterPath="$PROJECT_DIR$/ble/sensortag/js/sensortag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/app-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/index_sensortag_pages.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/scripts/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/scripts/vendor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/styles/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensortag_pages/styles/vendor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,11 +19,48 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ble/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="76">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="45" />
               <folding>
                 <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bulb.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ble/bulb/web/bulb.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="index_bulb.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ble/bulb/web/index_bulb.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ble/bulb/web/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -73,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ble/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="133">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="e#121#286#0" />
                 <element signature="e#298#555#0" />
@@ -101,8 +102,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -121,7 +123,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/sensortag_pages/index_sensortag_pages.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sensortag/css/sensortag.css" />
         <option value="$PROJECT_DIR$/sensortag/js/st.js" />
         <option value="$PROJECT_DIR$/sensortag/index_ti.html" />
@@ -132,6 +133,9 @@
         <option value="$PROJECT_DIR$/ble/info.html" />
         <option value="$PROJECT_DIR$/ble/index.html" />
         <option value="$PROJECT_DIR$/ble/styles.css" />
+        <option value="$PROJECT_DIR$/ble/bulb/web/styles.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/start_style.css" />
       </list>
     </option>
   </component>
@@ -167,11 +171,6 @@
               <item name="rockie-xu.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="rockie-xu.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="rockie-xu.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rockie-xu.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ble" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -180,6 +179,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -229,18 +229,18 @@
       <workItem from="1529126596200" duration="5888000" />
       <workItem from="1529236859443" duration="19227000" />
       <workItem from="1529433474841" duration="11340000" />
-      <workItem from="1529770675146" duration="3141000" />
+      <workItem from="1529770675146" duration="4227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39596000" />
+    <option name="totallyTimeSpent" value="40682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114934616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18444598" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50103235" side_tool="true" weight="0.112" />
@@ -248,7 +248,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49896765" weight="0.21466666" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49896765" visible="true" weight="0.21466666" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,13 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sensortag_pages/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3268">
@@ -565,20 +558,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ble/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ble/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        <state relative-caret-position="133">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
             <element signature="e#121#286#0" />
             <element signature="e#298#555#0" />
@@ -593,6 +576,43 @@
             <element signature="e#1583#1605#0" />
             <element signature="e#1618#1760#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/bulb/web/bulb.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/bulb/web/index_bulb.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ble/bulb/web/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
