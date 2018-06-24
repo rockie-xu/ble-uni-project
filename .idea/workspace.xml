@@ -29,8 +29,8 @@
       <file leaf-file-name="sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ble/sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="343">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -210,16 +210,15 @@
       <workItem from="1529126596200" duration="5888000" />
       <workItem from="1529236859443" duration="19227000" />
       <workItem from="1529433474841" duration="11340000" />
-      <workItem from="1529770675146" duration="22659000" />
+      <workItem from="1529770675146" duration="22954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59114000" />
+    <option name="totallyTimeSpent" value="59409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18444598" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -229,7 +228,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933334" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49896765" weight="0.21466666" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49896765" visible="true" weight="0.21466666" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -639,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ble/sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="343">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>
