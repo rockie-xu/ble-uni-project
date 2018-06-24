@@ -1,15 +1,15 @@
 var cacheName = 'blue-app';
 var filesToCache = [
     '/',
-    '/index.html',
-    '/styles.css',
-    '/icon.png',
-    '/info.html',
-    '/info.css',
-    '/bulb/bulb.html',
-    '/bulb/bulb.js',
-    '/bulb/styles.css',
-    '/bulb/images/icon.png'
+    '/ble/index.html',
+    '/ble/styles.css',
+    '/ble/icon.png',
+    '/ble/info.html',
+    '/ble/info.css',
+    '/ble/bulb/bulb.html',
+    '/ble/bulb/bulb.js',
+    '/ble/bulb/styles.css',
+    '/ble/bulb/images/icon.png'
 ];
 
 self.addEventListener('install', function(e) {
