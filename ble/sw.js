@@ -22,11 +22,11 @@ self.addEventListener('install', function(e) {
         })
     );
 });
-/*
+
 self.addEventListener('activate',  event => {
     event.waitUntil(self.clients.claim());
 });
-*/
+/*
 self.addEventListener('activate', function(event) {
     event.waitUntil(
         caches.keys().then(function(cache) {
@@ -42,7 +42,7 @@ self.addEventListener('activate', function(event) {
         })
     );
 });
-
+*/
 self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request, {ignoreSearch:true}).then(response => {
