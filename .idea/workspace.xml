@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ad647b7-61cf-43c4-b22d-274e2f7ac18c" name="Default" comment="" />
+    <list default="true" id="3ad647b7-61cf-43c4-b22d-274e2f7ac18c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/ble/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+              <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
               <folding>
                 <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
               </folding>
@@ -122,7 +124,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="35" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -210,16 +212,15 @@
       <workItem from="1529236859443" duration="19227000" />
       <workItem from="1529433474841" duration="11340000" />
       <workItem from="1529770675146" duration="22954000" />
-      <workItem from="1529831835240" duration="246000" />
+      <workItem from="1529831835240" duration="1216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59655000" />
+    <option name="totallyTimeSpent" value="60625000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18444598" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -228,7 +229,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933334" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49896765" weight="0.21370968" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49896765" visible="true" weight="0.21370968" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -409,7 +410,7 @@
     <entry file="file://$PROJECT_DIR$/ble/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
           </folding>
