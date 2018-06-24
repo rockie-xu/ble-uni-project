@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ad647b7-61cf-43c4-b22d-274e2f7ac18c" name="Default" comment="" />
+    <list default="true" id="3ad647b7-61cf-43c4-b22d-274e2f7ac18c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ble/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/ble/manifest.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ble/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="38">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -105,9 +107,9 @@
         <option value="$PROJECT_DIR$/ble/companion.js" />
         <option value="$PROJECT_DIR$/ble/web/iro.min.js" />
         <option value="$PROJECT_DIR$/ble/generate-service-worker.js" />
-        <option value="$PROJECT_DIR$/ble/manifest.json" />
         <option value="$PROJECT_DIR$/ble/sw.js" />
         <option value="$PROJECT_DIR$/ble/index.html" />
+        <option value="$PROJECT_DIR$/ble/manifest.json" />
       </list>
     </option>
   </component>
@@ -220,16 +222,15 @@
       <workItem from="1529126596200" duration="5888000" />
       <workItem from="1529236859443" duration="19227000" />
       <workItem from="1529433474841" duration="11340000" />
-      <workItem from="1529770675146" duration="19595000" />
+      <workItem from="1529770675146" duration="19849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56050000" />
+    <option name="totallyTimeSpent" value="56304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18444598" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -646,8 +647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ble/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="38">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>

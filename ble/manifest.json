@@ -1,7 +1,6 @@
 {
   "lang": "en",
   "background_color": "#874f96",
-  "theme_color": "#874f96",
   "name": "Blue Web App",
   "short_name": "Blue App",
   "display": "standalone",
