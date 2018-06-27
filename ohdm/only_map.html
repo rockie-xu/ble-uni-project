@@ -3,14 +3,23 @@
 
 <head>
     <title>Welcome to Open Historical Data Map (OHDM)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
     <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
     <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+
 </head>
 
 <body>
-    <div id="map" style="width: 100%; height: 770px" ></div>
+    <!--div id="map" style="width: 100%; height: 770px" ></div-->
+    <div class="container-fluid">
+        <div id="map" style="min-height: 450px" ></div>
+    </div>
+    
 
     <script>
         var url = 'http://ohm.f4.htw-berlin.de:8080/geoserver/ohdm_t/wms';

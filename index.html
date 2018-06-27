@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="start_style.css" rel="stylesheet">
-    <title>rockie pages</title>
+    <link href="ble/styles.css" rel="stylesheet">
+    <title>Rockie WebApp</title>
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <div>
-        <ul class="a">
+    <header>
+        <img class="pageIcon" src="ble/icon.png">
+        <h2>Rockie Web App</h2>
+    </header>
+    <div class="main">
+        <ul>
             <li>bluetooth low energy <a href="ble/index.html"> demo project</a></li>
+            <br/>
             <li><a href="ohdm/only_map.html">OHDM map</a></li>
-            <li>Tee</li>
+            <br/>
+            <li>or maybe some <a href="cups.jpg">Chocolate?</a></li>
         </ul>
     </div>
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service_worker.js')
+                .then(function() {
+                    console.log('Service Worker Registered');
+                });
+        }
+    </script>
 </body>
 </html>

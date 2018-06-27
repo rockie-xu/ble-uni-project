@@ -123,7 +123,9 @@ annyang.addCommands({
     'turn off': powerOff
 });
 
+/*
 // Install service worker - for offline support
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('serviceworker.js');
 }
+*/

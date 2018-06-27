@@ -1,4 +1,4 @@
-body {
+/*body {
     background-color: white;
     width: 800px;
     margin: 0 auto;
@@ -10,4 +10,27 @@ div {
     border: 2px solid #2ff361;
     padding: 25px;
     margin: 25px;
+}
+*/
+body {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    /*padding-left: 50px; */
+    grid-gap: 20px;
+    justify-content: center;
+    /*margin: 30px 250px 20px 250px; /* top right bottom left*/
+
+    border: 1px solid red;
+    background-color: #ebfcff;
+}
+
+.main > div {
+    padding: 10px 0px;
 }
