@@ -104,6 +104,32 @@ function blue() {
         .then(() => console.log('Color set to Blue'));
 }
 
+function yellow() {
+    return setColor(127, 127, 0)
+        .then(() => console.log('Color yellow to Yellow'));
+}
+function orange() {
+    return setColor(127, 35, 0)
+        .then(() => console.log('Color yellow to Orange'));
+}
+function purple() {
+    return setColor(127, 0, 127)
+        .then(() => console.log('Color yellow to Purple'));
+}
+
+function pink() {
+    return setColor(180, 12, 44)
+        .then(() => console.log('Color yellow to Pink'));
+}
+function cyan() {
+    return setColor(0, 127, 127)
+        .then(() => console.log('Color yellow to Cyan'));
+}
+function white() {
+    return setColor(127, 127, 127)
+        .then(() => console.log('Color yellow to White'));
+}
+
 function listen() {
     annyang.start({ continuous: true });
 }
@@ -113,12 +139,12 @@ annyang.addCommands({
     'red': red,
     'green': green,
     'blue': blue,
-    'yellow': () => setColor(127, 127, 0),
-    'orange': () => setColor(127, 35, 0),
-    'purple': () => setColor(127, 0, 127),
-    'pink': () => setColor(180, 12, 44),
-    'cyan': () => setColor(0, 127, 127),
-    'white': () => setColor(127, 127, 127),
+    'yellow': () => yellow,
+    'orange': () => orange,
+    'purple': () => purple,
+    'pink': () => pink,
+    'cyan': () => cyan,
+    'white': () => white,
     'turn on': powerOn,
     'turn off': powerOff
 });
