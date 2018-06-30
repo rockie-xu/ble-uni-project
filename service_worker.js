@@ -13,6 +13,8 @@ var filesToCache = [
     '/ble/bulb/styles.css',
     '/ble/bulb/images/icon.png',
     '/ohdm/only_map.html',
+    '/ohdm/css/ohdm.css',
+    '/ohdm/js/ohdm.js',
     'cups.jpg'
 ];
 
