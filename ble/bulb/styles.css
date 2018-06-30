@@ -22,8 +22,11 @@ i.material-icons {
 }
 
 .color-buttons {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 80px 80px;
 }
 
 .mic-button,

@@ -139,12 +139,12 @@ annyang.addCommands({
     'red': red,
     'green': green,
     'blue': blue,
-    'yellow': () => yellow,
-    'orange': () => orange,
-    'purple': () => purple,
-    'pink': () => pink,
-    'cyan': () => cyan,
-    'white': () => white,
+    'yellow': yellow,
+    'orange': orange,
+    'purple': purple,
+    'pink': pink,
+    'cyan': cyan,
+    'white': white,
     'turn on': powerOn,
     'turn off': powerOff
 });
