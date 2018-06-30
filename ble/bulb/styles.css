@@ -45,3 +45,7 @@ i.material-icons {
 .hidden {
     display: none;
 }
+
+.mdl-button--fab {
+    background-color: rgba(197, 162, 24, 0.78);
+}
