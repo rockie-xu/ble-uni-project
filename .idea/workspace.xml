@@ -4,6 +4,7 @@
     <list default="true" id="3ad647b7-61cf-43c4-b22d-274e2f7ac18c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ble/bulb/bulb.html" beforeDir="false" afterPath="$PROJECT_DIR$/ble/bulb/bulb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ble/bulb/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ble/bulb/styles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,8 +69,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ble/bulb/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="406">
+              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -145,8 +146,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ble/info.html" />
         <option value="$PROJECT_DIR$/ble/bulb/bulb.js" />
-        <option value="$PROJECT_DIR$/ble/bulb/styles.css" />
         <option value="$PROJECT_DIR$/ble/bulb/bulb.html" />
+        <option value="$PROJECT_DIR$/ble/bulb/styles.css" />
       </list>
     </option>
   </component>
@@ -159,7 +160,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="35" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -258,16 +259,15 @@
       <workItem from="1530028712757" duration="990000" />
       <workItem from="1530135762609" duration="1678000" />
       <workItem from="1530211436151" duration="26000" />
-      <workItem from="1530375169950" duration="6346000" />
+      <workItem from="1530375169950" duration="6613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74094000" />
+    <option name="totallyTimeSpent" value="74361000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13007571" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -276,7 +276,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933334" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49896765" weight="0.21370968" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49896765" visible="true" weight="0.21370968" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -542,8 +542,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ble/bulb/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="406">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
         </state>
       </provider>
     </entry>

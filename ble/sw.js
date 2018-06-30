@@ -1,5 +1,5 @@
-var cacheName = 'blue-app-3-1';
-var dataCacheName = 'blue-app-v3.1';
+var cacheName = 'blue-app-5-2';
+var dataCacheName = 'blue-app-v5.1';
 var filesToCache = [
     '/',
     '/index.html',
